@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>
+
+</title>
+	<script language="javascript" type="text/javascript">
+		/*
+		 Função para aumentar o  tamanho da letra.
+		 Funciona em todos os Navegadores. 
+		 by Juliano Sales
+		 */
+		function mudarTamanho(variavel){
+		 /* Essa função pode ser reutilizada em qualquer campo.
+		     o valor do campo recebe = o valor dele mesmo  mas em  maiúsculo
+			 */
+	        variavel.value = variavel.value.toUpperCase();
+		};
+	</script>
+</script>
+</head>
+<body >
+<div id="fomulario">
+	 <form id="form" action="#" method="post">
+	 <label>Nome:<br/><input type="text" id="txtNome" name="Nome" size="30"
+	onblur="mudarTamanho(this)"/></label><br/>
+	<!-- para invocar a função, no metodo onblur="nomedafuncao(passo o campo que recebera essa funcao)"-->
+	 <label>Sobrenome:<br/><input type="text" id="txtSenha" name="Nome" size="30" onblur="mudarTamanho(this)"/></label><br/>
+	 <label><input type="submit" name="btnEnviar" value="Enviar"/>
+	 </form>
+</div>
+</body>
+</html>
